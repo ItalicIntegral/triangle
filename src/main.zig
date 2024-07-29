@@ -38,6 +38,10 @@ pub const Triangle = struct {
     }
 };
 
+pub fn main() !void {
+    std.debug.print("This is not an executable file. Just some tests\n", .{});
+}
+
 test "equilateral all sides are equal" {
     const actual = try Triangle.init(2, 2, 2);
 
